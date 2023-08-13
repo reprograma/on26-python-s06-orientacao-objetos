@@ -31,9 +31,9 @@ O que veremos na aula de hoje?
 ### Tema3
 1. [Tópico 4](#topico4)
 
-# O que é orientação a objetos
+# O que é orientação objetos
 
-Programação orientado objeto é umas forma de programar, foi proposto por Ole-Johan Dahl e Kristen Nygaard, do Centro de Computação Norueguês em Oslo. Conceitos da POO têm origem na Simula 67, uma linguagem desenhada para fazer simulações.
+Programação orientado objeto é uma forma de programar, foi proposto por Ole-Johan Dahl e Kristen Nygaard, do Centro de Computação Norueguês em Oslo. Conceitos da POO têm origem na Simula 67, uma linguagem desenhada para fazer simulações.
 
 Um objeto é uma abstração de algum fato ou ente do mundo real, com atributos que representam as suas caraterísticas ou propriedades, e métodos que emulam o seu comportamento ou atividade. 
 
