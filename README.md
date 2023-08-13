@@ -31,7 +31,53 @@ O que veremos na aula de hoje?
 ### Tema3
 1. [Tópico 4](#topico4)
 
-### Tema1 
+# O que é orientação a objetos
+
+Programação orientado objeto é umas forma de programar, foi proposto por Ole-Johan Dahl e Kristen Nygaard, do Centro de Computação Norueguês em Oslo. Conceitos da POO têm origem na Simula 67, uma linguagem desenhada para fazer simulações.
+
+Um objeto é uma abstração de algum fato ou ente do mundo real, com atributos que representam as suas caraterísticas ou propriedades, e métodos que emulam o seu comportamento ou atividade. 
+
+A POO divide em 4 pilares:
+ - Abstração
+ - Encapsulamento
+ - Herança
+ - Polimorfismo
+
+A estrutura de POO começar com um `class`, `Variável de Class ou Variável de Instância` e `Método`
+
+OBS.: Tudo no Python é Objeto.
+
+Para provar:
+
+```python 
+a = 1
+print(type(a))
+```
+saída: `<class 'int'>`
+
+o objeto a foi criado pela class inteiro
+
+com isto ele carega alguns métodos
+
+```python
+a = 1
+res = a.__add__(2)
+print(res)
+```
+A mesma coisa que
+
+```python
+a = 1
+res = a + 2
+print(res)
+```
+saída: `3`
+
+#### o que é __ no inicio do método?
+
+No mundo pythonico o __ e conhecido com underscore.
+
+
 
 #### Topico1
 
