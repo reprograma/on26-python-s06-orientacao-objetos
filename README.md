@@ -13,23 +13,12 @@ Antes de começar, vamos organizar nosso setup.
 * Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
 * [Add outras intrucoes caso necessario]
 
-### Resumo
+### Conteúdo
 O que veremos na aula de hoje?
-* [Tema1](#tema1)
-* [Tema2](#tema2)
-* [Tema3](#tema3)
-
-## Conteúdo
-### Tema1 
-1. [Tópico 1](#topico1)
-2. [Tópico 2](#topico2)
-### Tema2 
-1. [Tópico 3](#topico3)
-   * [Subtópico 1](#subtopico1)
-   * [Subtópico 2](#subtopico2)
-   
-### Tema3
-1. [Tópico 4](#topico4)
+* [O que é POO](#O_que_é_orientação_objetos)
+* [Classe, Atributo e Metódo](#tema2)
+* [Herança](#tema3)
+* [Encapsulamento](#tema3)
 
 # O que é orientação objetos
 
@@ -77,34 +66,19 @@ saída: `3`
 
 No mundo pythonico o __ e conhecido com underscore.
 
-
-
-#### Topico1
+# Classe, Atributo e Metódo
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices. Nunc ante massa, dictum eget justo eget, feugiat tincidunt metus.
 
- #### Topico2
+ # Herança
   - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   - Donec erat mauris, laoreet in tortor vel
   - Nunc ante massa, dictum eget justo eget, feugiat tincidunt.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit.
 
-### Tema2
-#### Topico3
-* [Subtópico 1](#subtopico1)
-* [Subtópico 2](#Subtopico2)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+# Encapsulamento
 
-##### Subtopico1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
-
-##### Subtopico2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
-
-### Tema3
-#### Topico4
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices.
 
 ***
 ### Exercícios 
