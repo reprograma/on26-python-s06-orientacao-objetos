@@ -261,11 +261,12 @@ Neste exemplo, a classe Pessoa encapsula os atributos `__nome` e `__idade` como 
 
 ### Material da aula 
 
+
+
 ### Links Úteis
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
+- [PensePython2e](https://penseallen.github.io/PensePython2e/)
+- [PyLadiesSP/Cursos](https://github.com/PyLadiesSP/Cursos)
+
 
 
 <p align="center">
