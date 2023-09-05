@@ -17,8 +17,8 @@ Antes de começar, vamos organizar nosso setup.
 O que veremos na aula de hoje?
 * [O que é POO](#o-que-é-orientação-objetos)
 * [Classe, Atributo e Metódo](#classe-atributo-e-metódo)
-* [Herança](#classe-atributo-e-metódo)
-* [Encapsulamento](#classe-atributo-e-metódo)
+* [Herança](#herança)
+* [Encapsulamento](#encapsulamento)
 
 # O que é orientação objetos
 
