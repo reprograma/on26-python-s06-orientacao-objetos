@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online X | X-end | Semana X | 202X | Professora Daviny Letícia
+Turma Online on26 | Semana 3 | 2023 | Professora Daviny Letícia
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
