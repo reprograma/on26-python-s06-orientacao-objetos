@@ -24,7 +24,7 @@ Calcule e imprima o imposto a ser pago por cada veículo usando o método `calcu
 
 
 
-## Exercício de Herança em Python: Sistema de Gerenciamento de Funcionários (Exercicício Avançado Extra)
+## Exercício de Herança em Python: Sistema de Gerenciamento de Funcionários (Exercicío Avançado Extra)
 
 Você está encarregado de criar um sistema de gerenciamento de funcionários para uma empresa. O sistema deve ser capaz de lidar com diferentes tipos de funcionários e calcular seus salários com base em suas características específicas. Para isso, você precisa implementar a hierarquia de classes apropriada usando herança em Python.
 

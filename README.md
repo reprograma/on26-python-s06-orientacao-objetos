@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online on26 | Semana 3 | 2023 | Professora Daviny Letícia
+Turma Online on26 | Semana 6 | 2023 | Professora Daviny Letícia
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
@@ -15,10 +15,10 @@ Antes de começar, vamos organizar nosso setup.
 
 ### Conteúdo
 O que veremos na aula de hoje?
-* [O que é POO](#O_que_é_orientação_objetos)
-* [Classe, Atributo e Metódo](#tema2)
-* [Herança](#tema3)
-* [Encapsulamento](#tema3)
+* [O que é POO](#o-que-é-orientação-objetos)
+* [Classe, Atributo e Metódo](#classe-atributo-e-metódo)
+* [Herança](#classe-atributo-e-metódo)
+* [Encapsulamento](#classe-atributo-e-metódo)
 
 # O que é orientação objetos
 
@@ -256,8 +256,8 @@ Neste exemplo, a classe Pessoa encapsula os atributos `__nome` e `__idade` como 
 
 ***
 ### Exercícios 
-* [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
-* [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
+* [Exercicio para sala](https://github.com/reprograma/on26-python-s06-orientacao-objetos/tree/main/exercicios/para-sala)
+* [Exercicio para casa](https://github.com/reprograma/on26-python-s06-orientacao-objetos/tree/main/exercicios/para-casa)
 
 ### Material da aula 
 
