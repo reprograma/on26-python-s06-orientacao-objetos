@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online on26 | Semana 6 | 2023 | Professora Daviny Letícia
+Turma Online on26 | Semana 6 | 2023 | Professora DL
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
