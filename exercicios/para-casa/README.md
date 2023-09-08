@@ -52,7 +52,6 @@ Crie instâncias de FuncionarioTemporario e FuncionarioIntegral, atribuindo valo
 
 Calcule e imprima o pagamento de cada funcionário usando o método `calcular_pagamento()`.
 
-
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!

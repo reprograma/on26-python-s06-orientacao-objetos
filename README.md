@@ -254,6 +254,35 @@ print(pessoa.get_idade())  # Saída: 35
 
 Neste exemplo, a classe Pessoa encapsula os atributos `__nome` e `__idade` como privados e fornece métodos de acesso (getters e setters) para esses atributos. Isso permite um controle mais preciso sobre como esses atributos podem ser lidos e modificados, tornando o código mais seguro e organizado.
 
+
+# Abstração em Programação Orientada a Objetos (POO)
+
+A abstração é um dos conceitos fundamentais da Programação Orientada a Objetos (POO) e descreve a capacidade de modelar objetos do mundo real como representações simplificadas em um sistema de software. É a prática de se concentrar nos aspectos essenciais de um objeto e ignorar detalhes não essenciais. A abstração permite criar modelos ou classes que representam entidades ou conceitos do mundo real de forma a simplificar a complexidade e fornecer uma representação clara e útil dessas entidades no contexto do software.
+
+Principais elementos da abstração:
+
+ - `Classes e Objetos`: Em POO, as classes são a principal unidade de abstração. Uma classe define um modelo que descreve atributos (dados) e métodos (comportamentos) relacionados a uma entidade. Um objeto é uma instância de uma classe e representa uma entidade específica.
+
+- `Atributos e Métodos`: Através da abstração, você pode definir os atributos (propriedades) e métodos (ações) de uma classe que são relevantes para a representação da entidade no sistema de software. Isso permite encapsular dados e comportamentos relacionados em uma única entidade.
+
+ - `Ocultação de Detalhes`: A abstração permite ocultar os detalhes internos de uma classe, revelando apenas as informações e funcionalidades necessárias para o uso externo. Isso promove o princípio de "esconder a implementação" e ajuda a evitar que os usuários da classe acessem informações não essenciais.
+
+- `Herança e Polimorfismo`: Através da herança, é possível criar classes derivadas que herdam atributos e métodos de uma classe base, promovendo a reutilização de código e a criação de hierarquias de classes. O polimorfismo permite que objetos de diferentes classes sejam tratados de maneira uniforme através de interfaces comuns.
+
+- `Modelagem de Conceitos Abstratos`: A abstração não se limita a objetos físicos; ela também pode ser usada para modelar conceitos abstratos, como transações bancárias, pedidos de compra ou qualquer outra entidade que possa ser representada de forma útil em um sistema de software.
+
+### Por que usar a abstração:
+
+Simplificação: A abstração ajuda a simplificar sistemas complexos, dividindo-os em partes gerenciáveis e compreensíveis.
+Reutilização de Código: Classes abstratas e interfaces podem ser usadas como modelos para criar novas classes, promovendo a reutilização de código.
+
+Clareza: A abstração melhora a compreensão do sistema, fornecendo uma visão de alto nível dos conceitos e entidades envolvidos.
+Manutenção: Mudanças e atualizações em um sistema são mais fáceis de implementar quando a abstração é usada, pois as mudanças podem ser feitas em uma única classe ou interface, afetando todas as subclasses relacionadas.
+
+Extensibilidade: Através da herança e da criação de novas classes, a abstração torna o sistema extensível, permitindo adicionar novas funcionalidades sem afetar o código existente.
+
+Portanto, a abstração é um conceito poderoso em POO que desempenha um papel fundamental na criação de software flexível, eficiente e fácil de entender.
+
 ***
 ### Exercícios 
 * [Exercicio para sala](https://github.com/reprograma/on26-python-s06-orientacao-objetos/tree/main/exercicios/para-sala)
