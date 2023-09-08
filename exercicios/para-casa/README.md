@@ -1,7 +1,7 @@
 # Exercício de Casa 🏠 
 
 
-## Crie uma classe base chamada Veiculo com os seguintes atributos:
+## 👩🏻‍💻 Crie uma classe base chamada Veiculo com os seguintes atributos:
 
 - modelo: o modelo do veículo (uma string).
 - ano: o ano de fabricação do veículo (um número inteiro).
@@ -24,7 +24,7 @@ Calcule e imprima o imposto a ser pago por cada veículo usando o método `calcu
 
 
 
-## Exercício de Herança em Python: Sistema de Gerenciamento de Funcionários (Exercicío Avançado Extra)
+## 🧠 Exercício de Herança em Python: Sistema de Gerenciamento de Funcionários (Exercicío Avançado Extra)
 
 Você está encarregado de criar um sistema de gerenciamento de funcionários para uma empresa. O sistema deve ser capaz de lidar com diferentes tipos de funcionários e calcular seus salários com base em suas características específicas. Para isso, você precisa implementar a hierarquia de classes apropriada usando herança em Python.
 
