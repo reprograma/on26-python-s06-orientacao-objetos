@@ -8,7 +8,7 @@ Os exercicíos proposta para sala de aula:
 
 ## ✏️ Exercicío Classe, Atributo e Método
 
-1 - Exercício de Classe, Atributo e Método (Nível Básico): Conta Bancária
+- Exercício 1: Exercício de Classe, Atributo e Método (Nível Básico): Conta Bancária
 
 Você está criando um programa para representar contas bancárias. Cada conta bancária tem um número de conta, um titular da conta e um saldo. Você precisa criar uma classe ContaBancaria para representar essas contas e fornecer métodos para realizar operações básicas, como depósito e saque.
 
@@ -39,7 +39,7 @@ conta.sacar(500)
 print(f"Saldo após saque: R${conta.saldo}")
 ```
 
-2 - Exercício de Classe, Atributo e Método (Nível Básico): Retângulo
+- Exercício 2: Exercício de Classe, Atributo e Método (Nível Básico): Retângulo
 
 Crie uma classe chamada Retangulo para representar retângulos. Cada retângulo tem largura e altura. A classe deve incluir métodos para calcular a área e o perímetro do retângulo.
 
