@@ -289,14 +289,9 @@ Portanto, a abstração é um conceito poderoso em POO que desempenha um papel f
 * [Exercicio para sala](https://github.com/reprograma/on26-python-s06-orientacao-objetos/tree/main/exercicios/para-sala)
 * [Exercicio para casa](https://github.com/reprograma/on26-python-s06-orientacao-objetos/tree/main/exercicios/para-casa)
 
-### Material da aula 
-
-
-
 ### Links Úteis
 - [PensePython2e](https://penseallen.github.io/PensePython2e/)
 - [PyLadiesSP/Cursos](https://github.com/PyLadiesSP/Cursos)
-
 
 
 <p align="center">

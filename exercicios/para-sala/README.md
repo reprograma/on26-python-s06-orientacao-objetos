@@ -75,10 +75,11 @@ print(f"Perímetro do retângulo: {perimetro}")
 
 Crie um sistema de gerenciamento de veículos. Crie uma classe base chamada Veiculo com os seguintes atributos:
 
-  - marca: a marca do veículo.
-  -modelo: o modelo do veículo.
+    - marca: a marca do veículo.
+    - modelo: o modelo do veículo.
+    - ano: o ano de fabricação do veículo.
 
-ano: o ano de fabricação do veículo.
+    
 A classe Veiculo deve ter um método chamado `descricao()` que retorna uma descrição completa do veículo.
 
 Crie duas subclasses concretas, Carro e Moto, que herdam da classe Veiculo. Adicione atributos específicos para cada tipo de veículo, como número de portas para carros e tipo de motor para motos.
