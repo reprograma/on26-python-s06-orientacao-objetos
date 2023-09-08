@@ -1,6 +1,12 @@
 # Exercício de Sala 🏫  
 
-## Exercicío Classe, Atributo e Método
+Vamos aos exercicios que amamos muito !!!
+
+# 🍞 Mão na massa
+
+Os exercicíos proposta para sala de aula:
+
+## ✏️ Exercicío Classe, Atributo e Método
 
 1 - Exercício de Classe, Atributo e Método (Nível Básico): Conta Bancária
 
@@ -62,7 +68,7 @@ print(f"Área do retângulo: {area}")
 print(f"Perímetro do retângulo: {perimetro}")
 ```
 
-## 2 - Exercicío Herança
+## ✏️ Exercicío Herança
 
 
 - Exercício 1: Veículos
@@ -99,7 +105,7 @@ Esses exercícios ajudarão você a praticar a criação de hierarquias de class
 
 
 
-## Encapsulamento
+## ✏️ Encapsulamento
 
 
 - Exercício 1: Catálogo de Produtos
@@ -127,7 +133,7 @@ Crie uma classe chamada Compromisso que represente um compromisso na agenda de a
 data: a data do compromisso. descricao: a descrição do compromisso. A classe deve incluir métodos públicos para definir e obter a data e a descrição do compromisso. Além disso, crie um método `__str` para exibir informações sobre o compromisso.
 
 
-## Abstração
+## ✏️ Abstração
 
 - Exercício 1: Figuras Geométricas
 
@@ -148,10 +154,6 @@ Crie uma classe abstrata chamada Produto com métodos abstratos `calcular_preco(
 - Exercício 5: Formas de Pagamento
 
 Crie uma classe abstrata chamada FormaPagamento com métodos abstratos `calcular_desconto()` e `calcular_parcelas()`. Em seguida, crie subclasses concretas como CartaoCredito, Boleto e Transferencia que herdam da classe FormaPagamento. Cada uma das subclasses deve implementar os métodos `calcular_desconto()` e `calcular_parcelas()` de acordo com as regras de pagamento específicas.
-
-
-
-
 
 ---
 

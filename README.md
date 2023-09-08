@@ -19,6 +19,7 @@ O que veremos na aula de hoje?
 * [Classe, Atributo e Metódo](#classe-atributo-e-metódo)
 * [Herança](#herança)
 * [Encapsulamento](#encapsulamento)
+* [Abstração](#abstração-em-programação-orientada-a-objetos-poo)
 
 # O que é orientação objetos
 
@@ -273,13 +274,13 @@ Principais elementos da abstração:
 
 ### Por que usar a abstração:
 
-Simplificação: A abstração ajuda a simplificar sistemas complexos, dividindo-os em partes gerenciáveis e compreensíveis.
+ - Simplificação: A abstração ajuda a simplificar sistemas complexos, dividindo-os em partes gerenciáveis e compreensíveis.
 Reutilização de Código: Classes abstratas e interfaces podem ser usadas como modelos para criar novas classes, promovendo a reutilização de código.
 
-Clareza: A abstração melhora a compreensão do sistema, fornecendo uma visão de alto nível dos conceitos e entidades envolvidos.
+- Clareza: A abstração melhora a compreensão do sistema, fornecendo uma visão de alto nível dos conceitos e entidades envolvidos.
 Manutenção: Mudanças e atualizações em um sistema são mais fáceis de implementar quando a abstração é usada, pois as mudanças podem ser feitas em uma única classe ou interface, afetando todas as subclasses relacionadas.
 
-Extensibilidade: Através da herança e da criação de novas classes, a abstração torna o sistema extensível, permitindo adicionar novas funcionalidades sem afetar o código existente.
+- Extensibilidade: Através da herança e da criação de novas classes, a abstração torna o sistema extensível, permitindo adicionar novas funcionalidades sem afetar o código existente.
 
 Portanto, a abstração é um conceito poderoso em POO que desempenha um papel fundamental na criação de software flexível, eficiente e fácil de entender.
 
