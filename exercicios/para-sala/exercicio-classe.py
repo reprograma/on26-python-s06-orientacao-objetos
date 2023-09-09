@@ -16,16 +16,26 @@ class contaBancaria:
     def depositar(self, valor):
         if valor > 0:
             self.saldo =+ valor    # self.saldo = self.saldo + valor
-            print(f'Valor depositado de R${valor} realizado com sucesso!')
+            print(f'Valor de R${valor} depositado com sucesso!')
         else:
-            print('O valor do deposito deve ser maior que 0')
+            print('O valor do depósito deve ser maior que 0')
     
     def sacar(self, valor):
         if valor > 0:
             if self.saldo >= valor:
                 self.saldo -= valor
-                print(f'Saque de R${valor} realizado com saque!')
+                print(f'Saque de R${valor} realizado com sucesso!')
             else:
                 print('saldo insuficiente para realizar o saque')
         else:
             print('o valor do saque deve ser maior que 0')
+
+contaJessica = contaBancaria(202301, "Jéssica Machado")
+contaJessica.depositar(100)
+contaJessica.sacar(10)
+print(f'Saldo disponível: R${contaJessica.saldo}')
+
+contaLais = contaBancaria(202302, "Lais")
+contaLais.depositar(500)
+contaLais.sacar(100)
+
