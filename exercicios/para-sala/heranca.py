@@ -33,9 +33,9 @@ class personprofessional(person):
 
     def info(self):
         super().info()
-        print("setor: ", self.setor)
+        print("setor:", self.setor)
         print("nivel:", self.nivel)
 
-maria_dba = personprofessional('brasileira', 'feminina', 'Maria', '19', 'data', 'junior')
+maria_dba = personprofessional('brasileira,', 'feminina,', 'Maria,', '19 anos', 'data', 'junior')
 maria_dba.info()
     
