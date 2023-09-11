@@ -8,6 +8,7 @@
 preco: o preço do veículo (um número decimal).
 Na classe Veiculo, implemente um método chamado `calcular_imposto()` que retorna o imposto a ser pago pelo veículo. O imposto é calculado como 10% do preço do veículo.
 
+
 Crie uma classe chamada Carro que herda da classe Veiculo. Adicione um atributo adicional:
 
 - marca: a marca do carro (uma string).
