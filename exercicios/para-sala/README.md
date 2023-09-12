@@ -104,6 +104,12 @@ Crie instâncias de ProdutoFisico e ProdutoDigital, atribuindo valores adequados
 
 Esses exercícios ajudarão você a praticar a criação de hierarquias de classes com herança em Python e a entender como compartilhar funcionalidades comuns e adicionar comportamentos específicos em subclasses.
 
+Exercicio Extra - Herança
+
+Complemente o método calcular_aluguel() em cada uma das subclasses para calcular o valor do aluguel com base em regras específicas:
+Para Casa, o aluguel deve ser calculado como preco_base + (area_terreno * 5).
+Para Apartamento, o aluguel deve ser calculado como preco_base + (numero_quartos * 300).
+e superclass tem o atributo endereco e nome_do_proprietario
 
 
 ## ✏️ Encapsulamento
