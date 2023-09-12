@@ -1,0 +1,36 @@
+***Semana 06***
+Profª Daviny (Perfeitaaaaaaa)
+
+- A **Classe** cria os objetos;
+- O **Método** é o que age sobre os objetos;
+- Os **Atributos** são as características que dão nome ao objeto;
+- O **self** é uma etiqueta que explica para o objeto quem ele é e quais são suas características;
+
+TUDO depois do ponto (.) é método
+
+__init__ é o método construtor do escopo
+def = significa definir
+
+4 Pilares da POO
+1. Abstração
+2. Encapsulamento
+3. herança
+4. Polimorfismo
+
+***Exercicío de casa***
+Ler o PEP 8 (https://peps.python.org/pep-0008/)
+Pesquisar: *args and 
+
+
+**Herança**
+
+SUPER CLASSE é a classe Mãe
+A CLASSE FILHA herda os atributos dessa classe
+
+*Quando eu defino a classe filha eu chamo a classe mãe entre parenteses
+
+Existem heranças de atributos
+e heranças de métodos
+E elas são sempre herdados de uma super classe
+
+pass = quando eu não quero escrever nada dentro do método
