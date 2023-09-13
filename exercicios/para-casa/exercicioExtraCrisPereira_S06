@@ -1,0 +1,36 @@
+# Exercicio extra para casa semana 06 - prof Daviny Letícia
+# Aluna Cris Pereira
+
+class Funcionario:
+    def __init__(self, nome):
+        self.nome = nome
+        self.salario = 0.00
+
+    def calcular_pagamento():
+        pass
+
+class FuncionarioTemporario(Funcionario):
+    def __init__(self, nome, salario_por_hora, horas_trabalhadas):
+        super().__init__(nome)
+        self.salario_por_hora = salario_por_hora 
+        self.horas_trabalhadas = horas_trabalhadas
+
+    def calcular_pagamento(self):
+        return self.salario_por_hora * self.horas_trabalhadas
+    
+class FuncionarioIntegral(Funcionario):
+    def __init__(self, nome, salario_mensal):
+        super().__init__(nome)
+        self.salario_mensal = salario_mensal
+
+    def calcular_pagamento(self):
+        return self.salario_mensal
+    
+garconete = FuncionarioTemporario("Ana Luiza Peres", 30, 6)
+valet = FuncionarioTemporario("Pedro Alcântara", 22.6, 4)
+cozinheiro = FuncionarioIntegral("Matheus Augusto", 3120.43)
+
+print("Contador, realize os seguintes pagamentos:")
+print(f"Garçonete: R$ {FuncionarioTemporario.calcular_pagamento(garconete):.2f}")
+print(f"Valet: R$ {FuncionarioTemporario.calcular_pagamento(valet):.2f}")
+print(f"Cozinheiro: R$ {FuncionarioIntegral.calcular_pagamento(cozinheiro):.2f}")

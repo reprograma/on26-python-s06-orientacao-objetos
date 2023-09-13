@@ -1,0 +1,51 @@
+# Exercicio para casa semana 06 - prof Daviny Letícia
+# Aluna Cris Pereira
+
+class Veiculo:
+    def __init__(self, modelo, ano_fabricacao, preco):
+        self.modelo = modelo
+        self.ano_fabricacao = ano_fabricacao
+        self.preco = preco
+
+    def calcular_imposto(self):
+        return self.preco * 0.1
+    
+class Carro(Veiculo):
+    def __init__(self, modelo, ano_fabricacao, preco, marca):
+        super().__init__(modelo, ano_fabricacao, preco)
+        self.marca = marca
+
+    def descontar(self):
+        return self.preco * 0.05
+    
+class Moto(Veiculo):
+    def __init__(self, modelo, ano_fabricacao, preco, cilindrada):
+        super().__init__(modelo, ano_fabricacao, preco)
+        self.cilindrada = cilindrada
+
+    def calcular_imposto(self):
+        return self.preco * 0.05
+    
+novo_carro = Carro("March", 2011, 9300.50, "Nissan")
+desconto_carro = Carro.descontar(novo_carro)
+imposto_carro = Carro.calcular_imposto(novo_carro)
+
+nova_moto = Moto("Honda CB Twister", 2022, 21530.70, 293)
+imposto_moto = Moto.calcular_imposto(nova_moto)
+
+print("Parabéns! Você acaba de adquirir seu novo carro! Veja Informações abaixo.")
+print(f"Modelo: {novo_carro.modelo}")
+print(f"Ano de fabricação: {novo_carro.ano_fabricacao}")
+print(f"Marca: {novo_carro.marca}")
+print(f"Preço: R$ {novo_carro.preco}")
+print(f"Desconto especial: R$ {desconto_carro:.2f}")
+print(f"Imposto: R$ {imposto_carro:.2f}")
+print(f"Valor final: R$ {novo_carro.preco - desconto_carro + imposto_carro:.2f}\n")
+
+print("Parabéns! Você acaba de adquirir sua nova moto! Veja Informações abaixo.")
+print(f"Modelo: {nova_moto.modelo}")
+print(f"Ano de fabricação: {nova_moto.ano_fabricacao}")
+print(f"Cilindrada: {nova_moto.cilindrada}")
+print(f"Preço: R$ {nova_moto.preco}")
+print(f"Imposto: R$ {imposto_moto:.2f}")
+print(f"Valor final: R$ {nova_moto.preco + imposto_moto:.2f}")
