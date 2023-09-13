@@ -29,3 +29,6 @@ fatinha_funcionario = Temporario ('Fatinha Rodrigues',1500, 10)
 
 print (marcinhatabata_funcionario.calcularPagamento())
 print (fatinha_funcionario.calcularPagamento())
+
+#Feito em chamada com as meninas da turma: 
+# Andreza, Igea, Louise, Thaysa, Julia, Maria de Fatima, Marcinha
