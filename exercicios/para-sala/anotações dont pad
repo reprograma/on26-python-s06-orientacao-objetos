@@ -1,0 +1,343 @@
+Aula POO - 09/09/2023
+
+1) escopo global é quando a variável é criada fora de uma função ou bloco e local qd quando o escopo dela pertence só a um bloco?
+
+2) Gostaria de entender o que escopo interfere na orientação a objetos, que a prof disse que isso é importante
+
+3) Além dos métodos "prontos"/que já existem, a gente cria/pode criar métodos novos. É isso?
+
+4) Tudo que vem depois do .(ponto) é método? foi isso que a prof falou? Exatamente
+
+5) Como eu faria para deixar o usuário inputar em uma função de classe?
+
+
+
+class cachorro:
+    def __init__(self, nome, raca): # metodo construtor
+        self.nome = nome
+        self.raca = raca
+        
+    def andar(self):
+        print('estou andando', self.nome)
+        
+    def info(self):
+        print(self.nome, self.raca)
+           
+        
+cachorro_lulu = cachorro('lulu', 'Harrier')
+
+cachorro_rex = cachorro('rex', 'Pinscher')
+
+# .... N objetos
+          
+cachorro_lulu.info()
+
+cachorro_rex.info()
+
+cachorro_lulu.andar()
+
+print(f'nome do meu cachoro: {cachorro_lulu.nome}')
+
+cachorro_lulu.nome
+
+cachorro_rex.andar()
+
+b = 1
+a = 2
+
+print(b.__class__)
+
+resp = b.__add__(a)
+
+
+print(resp)
+
+
+# exercício 1
+
+class ContaBancaria:
+    def __init__(self, numero_conta, titular_conta):
+        self.numero_conta = numero_conta
+        self.titular_conta = titular_conta
+        self.saldo = 0.0 # saldo inicial definido com 0.0
+    
+    def depositar(self, valor):
+        if valor > 0:
+            text = f'Valor depositado de R${valor}, realizado com sucesso.'
+            self.saldo =+ valor   # self.saldo = self.saldo + valor
+            print(text)
+        else:
+            print('O valor do depósito deve ser maior que 0')
+        
+    def sacar(self, valor):
+        if valor > 0:
+            if self.saldo >= valor:
+                self.saldo -= valor
+                print(f'Saque de R${valor} realizado com sucesso')
+            else: 
+                print("saldo insuficiente para realizar o saque")
+        else:
+            print("O valor do saque deve ser maior que zero.")
+            
+
+------
+
+
+# # exercício 1
+
+class ContaBancaria:
+    def __init__(self, numero_conta, titular_conta):
+        self.numero_conta = numero_conta
+        self.titular_conta = titular_conta
+        self.saldo = 0.0 # saldo inicial definido com 0.0
+    
+    def depositar(self, valor):
+        if valor > 0:
+            text = f'Valor depositado de R${valor}, realizado com sucesso.'
+            self.saldo =+ valor   # self.saldo = self.saldo + valor
+            print(text)
+        else:
+            print('O valor do depósito deve ser maior que 0')
+        
+    def sacar(self, valor):
+        if valor > 0:
+            if self.saldo >= valor:
+                self.saldo -= valor
+                print(f'Saque de R${valor} realizado com sucesso')
+            else: 
+                print("saldo insuficiente para realizar o saque")
+        else:
+            print("O valor do saque deve ser maior que zero.")
+            
+
+contaDaviny = ContaBancaria(202301, "Daviny Letícia")
+
+contaDaviny.depositar(100)
+
+contaDaviny.sacar(10)
+
+print(contaDaviny.saldo)
+
+contaLais = ContaBancaria(202302, "Lais")
+
+contaLais.depositar(80)
+
+contaLais.sacar(1000)
+
+
+# 2 Retangulo
+
+class Retangulo:
+    def __init__(self, largura, altura):
+        self.largura = largura
+        self.altura = altura
+        
+    def calcular_area(self):
+        # print(f'calcular a área{self.largura * self.altura}')
+        return self.largura * self.altura
+    
+    def calcular_perimetro(self):
+        return 2 * (self.largura + self.altura)
+    
+    
+casa_fabiana = Retangulo(5.0, 3.0)
+
+print(f'A casa da Fabiana, tem: {casa_fabiana.calcular_area()} área')
+
+print(f'a casa da fabiana tem {casa_fabiana.calcular_perimetro()} de perímetro')
+    
+
+
+casa_daviny = Retangulo(9.0, 10.5)
+
+print(casa_daviny.calcular_area())
+print(casa_daviny.calcular_perimetro())
+
+6) Herança seria uma classe dentro de uma subclasse?
+
+7) Estou com dificuldade de entender o uso do (self) sozinho, sem nenhum outro parametro acompanhando,  na def da função
+
+
+
+class Animal:
+    def __init__(self, nome):
+        self.nome = nome
+        
+    def fazer_som(self):
+        pass
+    
+class Cachorro(Animal):
+    def fazer_som(self):
+       return f'{self.nome} faz um latido'
+   
+    def andar(self):
+       pass
+   
+
+class Gato(Animal):
+    def fazer_som(self):
+        return f'{self.nome} faz um miado'
+
+# ----
+
+class Person:
+    def __init__(self, nacionalidade, genero, nome, idade):
+        self.nacionalidade = nacionalidade
+        self.genero = genero
+        self.nome = nome
+        self.idade = idade
+    
+    def info(self):
+        print(self.nacionalidade, self.genero, self.nome, self.idade)
+        
+class PersonProfessional(Person):
+    def __init__ (self, nacionalidade, genero, nome, idade, setor, nivel):
+        super().__init__(nacionalidade, genero, nome, idade)
+        self.setor = setor
+        self.nivel = nivel
+        
+        
+    def info(self):
+        super().info()
+        print("Setor:", self.setor)
+        print("Nível:", self.nivel)
+        
+
+maria_dba = PersonProfessional('brasileira', 'feminina', 'Maria', '19', 'data', 'junior')
+
+maria_dba.info()
+
+
+# 1
+
+class Veiculo:
+    def __init__(self, marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+        
+    def descricao(self):
+        return f'Marca: {self.marca}, Modelo: {self.modelo}, Ano: {self.ano}'
+    
+class Carro(Veiculo):
+    def __init__(self, marca, modelo, ano, num_portas):
+        super().__init__(marca, modelo, ano)
+        self.num_portas = num_portas
+        
+    def descricao(self):
+        return super().descricao() + f', Números de portas: {self.num_portas}'
+    
+    
+class Moto(Veiculo):
+    def __init__(self, marca, modelo, ano, tipo_motor):
+        super().__init__(marca, modelo, ano)
+        self.tipo_motor = tipo_motor
+        
+    def descricao(self):
+        return super().descricao() + f'tipo de motor: {self.tipo_motor}'
+    
+    
+carro = Carro('Toyota', 'Corolla', 2023, 4)
+
+moto = Moto('honda', 'CBR500R', 2022, '4 tempos')
+
+
+print(carro.descricao())
+
+print(moto.descricao())
+
+
+carro_joao = Carro('Fiat', 'Siena', 2018, 4)
+
+print(carro_joao.descricao())
+
+
+# 2 
+
+class Produto:
+    def __init__(self, nome, preco):
+        self.nome = nome
+        self.preco = preco
+        
+    def descricao(self):
+        return f'nome: {self.nome}, Preço R$ {self.preco}'
+    
+class ProdutoFisico(Produto):
+    def __init__(self, nome, preco, peso, dimensoes):
+        super().__init__(nome, preco)
+        self.peso = peso
+        self.dimensoes = dimensoes
+        
+        
+    def descricao(self):
+        return super().descricao() + f", Peso: {self.peso} kg, Dimensões: {self.dimensoes} cm"
+    
+class ProdutoDigital(Produto):
+    def __init__(self, nome, preco, tamanho_arquivo):
+        super().__init__(nome,preco)
+        self.tamanho_arquivo = tamanho_arquivo
+        
+    def descricao(self):
+        return super().descricao() + f", Tamanho do Arquivo: {self.tamanho_arquivo} MB"
+    
+    
+produto_fisico_darla = ProdutoFisico('livro', 30.00, 0.5, '20x15x3')
+
+print(produto_fisico_darla.descricao()) 
+
+produto_digital_darla = ProdutoDigital('E-book', 50.00, 10)
+
+print(produto_digital_darla.descricao())
+
+
+
+8) É possível criar um dicionário dentro da def __init__?
+
+
+
+
+exercício extra
+
+implemente o método calcular_aluguel() em cada uma das subclasses para calcular o valor do aluguel com base em regras específicas:
+
+Para Casa, o aluguel deve ser calculado como preco_base + (area_terreno * 5).
+
+Para Apartamento, o aluguel deve ser calculado como preco_base + (numero_quartos * 300).
+
+e superclass tem o atributo endereco e nome_do_proprietario:
+
+
+
+class Imovel:
+    def __init__(self, endereco, nome_do_proprietario, preco_base):
+        self.endereco = endereco
+        self.nome_do_proprietario = nome_do_proprietario
+        self.preco_base = preco_base
+        
+    def calcular_aluguel(self):
+            return self.preco_base
+        
+class Casa(Imovel):
+    def __init__(self, endereco, nome_do_proprietario, preco_base, area_terreno):
+        super().__init__(endereco, nome_do_proprietario, preco_base)
+        self.area_terreno = area_terreno
+        
+    def calcular_aluguel(self):
+        resp =  self.preco_base + (self.area_terreno * 5)
+        return resp
+    
+class Apartamento(Imovel):
+    def __init__(self, endereco, nome_do_proprietario, preco_base, numero_quartos):
+        super().__init__(endereco,nome_do_proprietario, preco_base)
+        self.numero_quartos = numero_quartos
+        
+    def calcular_aluguel(self):
+        resp =  self.preco_base + (self.numero_quartos * 300)
+        return resp
+    
+    
+casa_maria = Casa("122 Rua das Flores", "Maria", 1500, 300)
+apartamento_carlos = Apartamento("333, Av. João Mendes", 'Carlos Jose', 1200, 2)
+
+
+print(casa_maria.calcular_aluguel())

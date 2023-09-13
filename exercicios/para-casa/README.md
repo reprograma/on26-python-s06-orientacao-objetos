@@ -15,7 +15,7 @@ Na classe Carro, implemente um método chamado desconto() que retorna um descont
 
 Crie uma classe chamada Moto que também herda da classe Veiculo. Adicione um atributo adicional:
 
-- cilindrada: a cilindrada da moto (um número inteiro).
+- cilindrada: a cilindrda da moto (um número inteiro).
 Na classe Moto, implemente um método chamado `calcular_imposto()` que calcula o imposto a ser pago pela moto. O imposto para motos é de 5% do preço do veículo.
 
 Crie instâncias de Carro e Moto, atribuindo valores adequados aos atributos de cada veículo.
@@ -32,7 +32,7 @@ Instruções:
 
 Crie uma classe base chamada Funcionario com os seguintes atributos:
 
- - nome: o nome do funcionário.
+ - nome: o nome do funcionário. 
  - salario: o salário base do funcionário (inicialmente definido como 0).
 
 A classe Funcionario deve ter um método chamado `calcular_pagamento()` que retorna o pagamento do funcionário. No entanto, este método deve ser definido como um método abstrato (utilizando `pass`) uma vez que cada tipo de funcionário (temporário e integral) calculará o pagamento de maneira diferente.
