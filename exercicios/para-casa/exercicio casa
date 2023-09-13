@@ -1,0 +1,48 @@
+
+# crie uma classe base chamada Veiculo com os seguintes atributos:
+#modelo: o modelo do veículo (uma string).
+#ano: o ano de fabricação do veículo (um número inteiro).
+#preco: o preço do veículo (um número decimal).
+# na classe Veiculo, implemente um método chamado `calcular_imposto()` que retorna o imposto a ser pago pelo veículo. O imposto é calculado como 10% do preço do veículo
+
+# toda class deve começar com letra maiscula:
+
+# Definindo a classe base Veiculo
+class Veiculo:
+    def _init_(self, modelo, ano, preco):
+        self.modelo = modelo
+        self.ano = ano
+        self.preco = preco
+
+    def calcular_imposto(self):
+        return 0.10 * self.preco
+
+# Definindo a classe Carro que herda de Veiculo
+class Carro(Veiculo):
+    def _init_(self, modelo, ano, preco, marca):
+        super().__init__(modelo, ano, preco)
+        self.marca = marca
+
+    def desconto(self):
+        return 0.05 * self.preco
+
+# Definindo a classe Moto que herda de Veiculo
+class Moto(Veiculo):
+    def _init_(self, modelo, ano, preco, cilindrada):
+        super().__init__(modelo, ano, preco)
+        self.cilindrada = cilindrada
+
+    def calcular_imposto(self):
+        return 0.05 * self.preco
+
+# Criando uma instância de Carro
+carro1 = Carro("Sedan", 2022, 30000.0, "Corolla")
+
+# Criando uma instância de Moto
+moto1 = Moto("Esportiva", 2023, 15000.0, 600)
+
+# Calculando e imprimindo o imposto a ser pago por cada veículo
+print(f"Imposto a ser pago pelo carro: R${carro1.calcular_imposto()}")
+print(f"Desconto no carro: R${carro1.desconto()}")
+
+print(f"Imposto a ser pago pela moto: R${moto1.calcular_imposto()}")
