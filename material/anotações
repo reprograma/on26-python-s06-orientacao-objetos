@@ -1,0 +1,58 @@
+
+
+  # dentro do método pode usar if, else...
+
+# int# dá a possibilidade do "cliente" dizer o que quer.. tipo: qual o saldo
+
+
+ # exercico 1
+class conta_bancaria: 
+    def init (self, numero_da_conta, titular_da_conta): # init(inicio) é metodo(é a ação) construtor/instabilizador
+        self.numero_da_conta = numero_da_conta
+        self.titular_da_conta = titular_da_conta  # self é como se fosse um atalho, "esse é o nome" quando estamos dentro de umobjeto esse objet pertecence a essa classe.
+        self.saldo = 0.0   # saldo inical, titular_da_conta.... é um escolpo. python sabe que saldo pertence a floot(numeral)
+
+        def depositar(self, valor):    # depositar é o método
+         if valor > 0:    # if(se o valor for maior que...) é uma função
+             text = f'Valor depositado de R${valor}, realizado com sucesso.'
+             self.saldo =+ valor # self.saldo = self.saldo + valor incrementador, meio que vai somando com a quantidade de dinheiro que vai entrando       
+             print(text)
+         else:
+               print(f' O valor do deposito deve ser maior que 0')   
+        
+        def sacar(self,valor):
+         if valor > 0:
+            if self.saldo >= valor:
+                self.saldo -= valor
+                print (f"Saque de R$ {valor} realizado com sucesso")
+            else: 
+                print("Saldo insuficiente para realizar o saque.")
+         else:
+             print("O valor do saque deve se maior que zero.")    # o 'f' é usado quando vamos usar valores dentro da função.
+
+contaFatima = conta_bancaria(202301, "Maria de Fatima")
+
+contaFatima.depositar(100)
+
+contaFatima.depositar(50)
+
+contaFatima.sacar(120)
+print(contaFatima.saldo)
+
+
+
+class Animal:
+    def _init_(self, nome):
+        self.nome = nome
+
+    def fazer_som(self):
+        pass
+class Cahorro(Animal):    
+     def fazer_som(self):
+         return f'{self.nome} faz um latido'
+
+class Gato(Animal):    
+     def fazer_som(self):
+         return f'{self.nome} faz um miado'
+     
+#############          #.....
