@@ -1,0 +1,44 @@
+# Implemente o método calcular_aluguel() em cada uma das subclasses para calcular o valor do aluguel 
+# com base em regras específicas:
+
+# Para Casa, o aluguel deve ser calculado como preco_base + (area_terreno * 5).
+
+# Para Apartamento, o aluguel deve ser calculado como preco_base + (numero_quartos * 300).
+
+# E superclass tem o atributo endereco e nome_do_proprietario
+
+#Criando a classe mãe
+class Imovel:
+    def __init__ (self, nome_do_proprietario, endereco, preco_base):
+        self.nome_do_proprietario = nome_do_proprietario
+        self.endereco = endereco
+        self.preco_base = preco_base
+
+    def calcular_aluguel(self):
+        return self.preco_base
+
+#Criando as classes filhas
+class Casa(Imovel):
+    def __init__(self, endereco, nome_do_proprietario, preco_base, area_terreno):
+        super().__init__(endereco, nome_do_proprietario, preco_base)
+        self.area_terreno = area_terreno
+
+    def calcular_aluguel(self):
+        resp = self.preco_base + (self.area_terreno * 5)
+        return resp
+
+class Apartamento(Imovel):
+    def __init__(self, nome_do_proprietario, endereco, preco_base, numero_quartos):
+        super().__init__(nome_do_proprietario, endereco, preco_base)
+        self.numero_quartos = numero_quartos
+    
+    def calcular_aluguel(self):
+        resp = self.preco_base + (self.numero_quartos * 300)
+        return resp
+    
+#Criando os objetos    
+casa_maria = Casa('122 Rua das Flores', 'Maria', 1500, 300)
+apartamento_carlos = Apartamento('333 Avenida Desespero', 'Carlos', 1200, 2)
+
+print(casa_maria.calcular_aluguel())
+print(apartamento_carlos.calcular_aluguel())
