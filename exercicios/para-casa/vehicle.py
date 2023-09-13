@@ -30,11 +30,11 @@ class Motorcycle(Vehicle):
         return self.value_base
     
 car = Car(f"BMW", "i7 Sedan", 2024, "4 Doors Eletric", 1282950)
-print("BMW Model i7 Sedan 2024 4 Doors Eletric\n")
-print("Value Base", car.calculate_taxes())
-print("Value to pay", car.calculate_discount(), "\n")
+print(" BMW Model i7 Sedan 2024 4 Doors Eletric\n",
+      "Value Base", car.calculate_taxes(),"\n" 
+      " Value to pay", car.calculate_discount(),"\n\n")
 
 motorcycle = Motorcycle(f"BMW", "1250 GS", 2024, "Cylinder 1254", 95990 )
-print("BMW Model 1250 GS 2024 Cylinder 1.254\n")
-print("Value Base", motorcycle.calculate_taxes())
-print("Value to pay", motorcycle.calculate_taxes_m())
+print(" BMW Model 1250 GS 2024 Cylinder 1.254\n", 
+      "Value Base", motorcycle.calculate_taxes(),"\n"
+      " Value to pay", motorcycle.calculate_taxes_m())
