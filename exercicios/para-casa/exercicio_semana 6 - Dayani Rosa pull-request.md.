@@ -1,4 +1,4 @@
-#exercicio casa - Semana 6 -
+py#exercicio casa - Semana 6 -
 class Veiculo:
  def __int__(self,modelo, ano, preço):
       self.modelo = modelo
