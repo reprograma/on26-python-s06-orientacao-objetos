@@ -47,11 +47,10 @@ class Moto(Veiculo):
     def calcular_imposto(self):
         return 0.05 * self.preco
 
-carro1 = Carro("BMW iX3", 2022, 130000.00, "BMW")
-moto1 = Moto("Scooter", 2023, 6000.00, 600)
+carro = Carro("Toyota Corolla", 2022, 60000, "Toyota")
+moto = Moto("CBR", 2021, 12000, 600)
+moto_joao = Moto("CBR", 2020, 2000, 900)
 
-imposto_carro = carro1.calcular_imposto()
-imposto_moto = moto1.calcular_imposto()
-
-print(f"Imposto a ser pago pelo carro: R${imposto_carro:.2f}")
-print(f"Imposto a ser pago pela moto: R${imposto_moto:.2f}")
+print(f"Imposto do carro R$: {carro.calcular_imposto()}")
+print(f"Imposto da moto R$: {moto.calcular_imposto()}")
+print(f"Imposto da moto do João R$: {moto_joao.calcular_imposto()}")
